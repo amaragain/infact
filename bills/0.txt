@@ -1,0 +1,403 @@
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="billing-table-container">
+					<table class="bill-page-table" id="billHeader" width="100%" border="0">
+						<tbody><tr>
+							<th width="20%">
+								<img alt="sam enterprises" class="bill-company-logo" src="img/company-logo.jpg">
+							</th>
+							<th class="text-center">
+								<h1>sam enterprises</h1>
+							</th>
+							<th width="20%" class="text-right">
+								<p>
+									--<br>
+									--, --<br>
+									Kerala, 695001<br>
+									--<br>
+									--<br>
+								</p>
+							</th>
+						</tr>
+					</tbody></table>
+					<table class="bill-page-table" id="billHeaderSubInfo" width="100%" border="1">
+						<tbody><tr>
+							<th class="text-center">
+								<select class="pull-right" style="border:none;">
+									<option>Duplicate Copy</option>
+									<option>Original Copy</option>
+								</select>
+								<p class="bill-type-info">Tax Invoice [B2C]</p>
+							</th>
+						</tr>
+					</tbody></table>
+					<table class="bill-page-table" id="billHeaderInfo" width="100%" border="0">
+						<tbody><tr>
+							<th width="65%">
+								<p>Billed To: <span class="customer-name-field" contenteditable=""></span></p>
+								<p>Address: <span contenteditable="" class="customer-address-field"></span></p>
+								<p>Phone No: <span class="customer-phone-field" contenteditable=""></span></p>
+								<p class="cust-gst-box">GST No: <span class="customer-gst-field" contenteditable=""></span></p>
+								<p>State Code &amp; State: <span class="state-code-field" contenteditable=""></span>, <span class="customer-state-field" contenteditable=""></span></p>
+							</th>
+							<th>
+								<table>
+									<tbody><tr>
+										<th width="45%">GST No.</th>
+										<td>--</td>
+									</tr>
+									<tr>
+										<th>PAN</th>
+										<td>--</td>
+									</tr>
+									<tr>
+										<th>State</th>
+										<td>Kerala</td>
+									</tr>
+									<tr>
+										<th>State Code</th>
+										<td>0</td>
+									</tr>
+									<tr>
+										<th>Invoice No.</th>
+										<td>SE <span id="billNo">0</span></td>
+									</tr>
+									<tr>
+										<th>Date</th>
+										<td>05-02-2018 02:22:08am</td>
+									</tr>
+								</tbody></table>
+							</th>
+						</tr>
+					</tbody></table>
+	<br>
+					<table class="bill-page-table" id="billgeneratingTable" width="100%" border="1">
+						<thead>
+							<tr>
+								<th width="4.42%" class="text-center">
+									SL. <br>No.
+								</th>
+								<th width="8.84%" class="text-center">
+									HSN<br>Code
+								</th>
+								<th class="text-left pad-h20">
+									Name of Product
+								</th>
+								<th width="4.42%" class="text-center">
+									GST <br>[%]
+								</th>
+								<th width="7%" class="text-center">
+									Qty
+								</th>
+								<th width="8.84%" class="text-center">
+									Unit <br>Price
+								</th>
+								<th width="8.84%" class="text-center">
+									Net <br>Amount
+								</th>
+								<th width="8.84%" class="text-center">
+									GST <br>Amount
+								</th>
+								<th width="8.84%" class="text-center">
+									Total
+								</th>
+							</tr>
+						</thead>
+						<tbody id="billgeneratingTableBody">
+							
+		<tr class="billing-rows" data-row-count="1">
+			<td class="text-center billcol-slno" data-row-count-slno="1">1</td>
+			<td class="text-center billcol-code" data-row-count-code="1">111225</td>
+			<td class="text-center billcol-name">
+				<input id="productInputField" class="form-control product-input-field" list="productsDdList" type="text" data-search-by="name" data-row-count-prdname="1" value="new3">
+				<datalist id="productsDdList">
+				  <option value="New Test produc 2*3[1234546789]--1"></option><option value="new1[1002]--2"></option><option value="new2[4534534]--3"></option><option value="new3[111225]--4"></option><option value="10 stock[1001]--5"></option><option value="qwerty[1000]--6"></option><option value="qwerty[1]--7"></option><option value="Product new[AB987987]--8"></option><option value="Product new[AB987987]--9"></option><option value="Product Test[AC98798789]--10">
+				</option></datalist>
+			</td>
+			<td class="text-center billcol-tax" data-row-count-prdtax="1">0</td>
+			<td class="text-center billcol-qty">
+				<input class="form-control form-pad-6 qty-input-field" data-row-count-prdqty="1" data-row-prd-rem="-388" type="number" min="1" value="1">
+			</td>
+			<td class="text-center billcol-price">
+				<input type="text" class="form-control form-pad-6 price-input-field" data-row-count-prdprice="1" min="0" value="54.50">
+			</td>
+			<td class="text-center billcol-netamt" data-this-tax-val="0" data-row-count-netamt="1">54.50</td>
+			<td class="text-center billcol-taxamt" data-row-count-taxamt="1">0.00</td>
+			<td class="text-center billcol-total" data-row-count-prdttl="1">54.50</td>
+		</tr><input type="hidden" class="hidden-id-input" value="4" data-row-count-id="1">
+		<tr class="billing-rows" data-row-count="2">
+			<td class="text-center billcol-slno" data-row-count-slno="2">2</td>
+			<td class="text-center billcol-code" data-row-count-code="2">1001</td>
+			<td class="text-center billcol-name">
+				<input id="productInputField" class="form-control product-input-field" list="productsDdList" type="text" data-search-by="name" data-row-count-prdname="2" value="10 stock">
+				<datalist id="productsDdList">
+				  <option value="New Test produc 2*3[1234546789]--1"></option><option value="new1[1002]--2"></option><option value="new2[4534534]--3"></option><option value="new3[111225]--4"></option><option value="10 stock[1001]--5"></option><option value="qwerty[1000]--6"></option><option value="qwerty[1]--7"></option><option value="Product new[AB987987]--8"></option><option value="Product new[AB987987]--9"></option><option value="Product Test[AC98798789]--10">
+				</option></datalist>
+			</td>
+			<td class="text-center billcol-tax" data-row-count-prdtax="2">12</td>
+			<td class="text-center billcol-qty">
+				<input class="form-control form-pad-6 qty-input-field" data-row-count-prdqty="2" data-row-prd-rem="999999" type="number" min="1" value="1">
+			</td>
+			<td class="text-center billcol-price">
+				<input type="text" class="form-control form-pad-6 price-input-field" data-row-count-prdprice="2" min="0" value="123.25">
+			</td>
+			<td class="text-center billcol-netamt" data-this-tax-val="12" data-row-count-netamt="2">123.25</td>
+			<td class="text-center billcol-taxamt" data-row-count-taxamt="2">14.79</td>
+			<td class="text-center billcol-total" data-row-count-prdttl="2">138.04</td>
+		</tr><input type="hidden" class="hidden-id-input" value="" data-row-count-id="2">
+		<tr class="billing-rows" data-row-count="3">
+			<td class="text-center billcol-slno" data-row-count-slno="3">3</td>
+			<td class="text-center billcol-code" data-row-count-code="3">1234546789</td>
+			<td class="text-center billcol-name">
+				<input id="productInputField" class="form-control product-input-field" list="productsDdList" type="text" data-search-by="name" data-row-count-prdname="3" value="New Test produc 2*3">
+				<datalist id="productsDdList">
+				  <option value="New Test produc 2*3[1234546789]--1"></option><option value="new1[1002]--2"></option><option value="new2[4534534]--3"></option><option value="new3[111225]--4"></option><option value="10 stock[1001]--5"></option><option value="qwerty[1000]--6"></option><option value="qwerty[1]--7"></option><option value="Product new[AB987987]--8"></option><option value="Product new[AB987987]--9"></option><option value="Product Test[AC98798789]--10">
+				</option></datalist>
+			</td>
+			<td class="text-center billcol-tax" data-row-count-prdtax="3">20</td>
+			<td class="text-center billcol-qty">
+				<input class="form-control form-pad-6 qty-input-field" data-row-count-prdqty="3" data-row-prd-rem="999999" type="number" min="1" value="1">
+			</td>
+			<td class="text-center billcol-price">
+				<input type="text" class="form-control form-pad-6 price-input-field" data-row-count-prdprice="3" min="0" value="13.00">
+			</td>
+			<td class="text-center billcol-netamt" data-this-tax-val="20" data-row-count-netamt="3">13.00</td>
+			<td class="text-center billcol-taxamt" data-row-count-taxamt="3">2.60</td>
+			<td class="text-center billcol-total" data-row-count-prdttl="3">15.60</td>
+		</tr><input type="hidden" class="hidden-id-input" value="" data-row-count-id="3">
+		<tr class="billing-rows" data-row-count="4">
+			<td class="text-center billcol-slno" data-row-count-slno="4">4</td>
+			<td class="text-center billcol-code" data-row-count-code="4">AB987987</td>
+			<td class="text-center billcol-name">
+				<input id="productInputField" class="form-control product-input-field" list="productsDdList" type="text" data-search-by="name" data-row-count-prdname="4" value="Product new">
+				<datalist id="productsDdList">
+				  <option value="New Test produc 2*3[1234546789]--1"></option><option value="new1[1002]--2"></option><option value="new2[4534534]--3"></option><option value="new3[111225]--4"></option><option value="10 stock[1001]--5"></option><option value="qwerty[1000]--6"></option><option value="qwerty[1]--7"></option><option value="Product new[AB987987]--8"></option><option value="Product new[AB987987]--9"></option><option value="Product Test[AC98798789]--10">
+				</option></datalist>
+			</td>
+			<td class="text-center billcol-tax" data-row-count-prdtax="4">12</td>
+			<td class="text-center billcol-qty">
+				<input class="form-control form-pad-6 qty-input-field" data-row-count-prdqty="4" data-row-prd-rem="999999" type="number" min="1" value="1">
+			</td>
+			<td class="text-center billcol-price">
+				<input type="text" class="form-control form-pad-6 price-input-field" data-row-count-prdprice="4" min="0" value="250.00">
+			</td>
+			<td class="text-center billcol-netamt" data-this-tax-val="12" data-row-count-netamt="4">250.00</td>
+			<td class="text-center billcol-taxamt" data-row-count-taxamt="4">30.00</td>
+			<td class="text-center billcol-total" data-row-count-prdttl="4">280.00</td>
+		</tr><input type="hidden" class="hidden-id-input" value="" data-row-count-id="4">
+		<tr class="billing-rows" data-row-count="5">
+			<td class="text-center billcol-slno" data-row-count-slno="5">5</td>
+			<td class="text-center billcol-code" data-row-count-code="5">AC98798789</td>
+			<td class="text-center billcol-name">
+				<input id="productInputField" class="form-control product-input-field" list="productsDdList" type="text" data-search-by="name" data-row-count-prdname="5" value="Product Test">
+				<datalist id="productsDdList">
+				  <option value="New Test produc 2*3[1234546789]--1"></option><option value="new1[1002]--2"></option><option value="new2[4534534]--3"></option><option value="new3[111225]--4"></option><option value="10 stock[1001]--5"></option><option value="qwerty[1000]--6"></option><option value="qwerty[1]--7"></option><option value="Product new[AB987987]--8"></option><option value="Product new[AB987987]--9"></option><option value="Product Test[AC98798789]--10">
+				</option></datalist>
+			</td>
+			<td class="text-center billcol-tax" data-row-count-prdtax="5">20</td>
+			<td class="text-center billcol-qty">
+				<input class="form-control form-pad-6 qty-input-field" data-row-count-prdqty="5" data-row-prd-rem="999999" type="number" min="1" value="1">
+			</td>
+			<td class="text-center billcol-price">
+				<input type="text" class="form-control form-pad-6 price-input-field" data-row-count-prdprice="5" min="0" value="250.00">
+			</td>
+			<td class="text-center billcol-netamt" data-this-tax-val="20" data-row-count-netamt="5">250.00</td>
+			<td class="text-center billcol-taxamt" data-row-count-taxamt="5">50.00</td>
+			<td class="text-center billcol-total" data-row-count-prdttl="5">300.00</td>
+		</tr><input type="hidden" class="hidden-id-input" value="" data-row-count-id="5">
+		<tr class="billing-rows" data-row-count="6">
+			<td class="text-center billcol-slno" data-row-count-slno="6">6</td>
+			<td class="text-center billcol-code" data-row-count-code="6">AB987987</td>
+			<td class="text-center billcol-name">
+				<input id="productInputField" class="form-control product-input-field" list="productsDdList" type="text" data-search-by="name" data-row-count-prdname="6" value="Product new">
+				<datalist id="productsDdList">
+				  <option value="New Test produc 2*3[1234546789]--1"></option><option value="new1[1002]--2"></option><option value="new2[4534534]--3"></option><option value="new3[111225]--4"></option><option value="10 stock[1001]--5"></option><option value="qwerty[1000]--6"></option><option value="qwerty[1]--7"></option><option value="Product new[AB987987]--8"></option><option value="Product new[AB987987]--9"></option><option value="Product Test[AC98798789]--10">
+				</option></datalist>
+			</td>
+			<td class="text-center billcol-tax" data-row-count-prdtax="6">12</td>
+			<td class="text-center billcol-qty">
+				<input class="form-control form-pad-6 qty-input-field" data-row-count-prdqty="6" data-row-prd-rem="999999" type="number" min="1" value="5">
+			</td>
+			<td class="text-center billcol-price">
+				<input type="text" class="form-control form-pad-6 price-input-field" data-row-count-prdprice="6" min="0" value="250.00">
+			</td>
+			<td class="text-center billcol-netamt" data-this-tax-val="12" data-row-count-netamt="6">1,250.00</td>
+			<td class="text-center billcol-taxamt" data-row-count-taxamt="6">150.00</td>
+			<td class="text-center billcol-total" data-row-count-prdttl="6">1,400.00</td>
+		</tr><input type="hidden" class="hidden-id-input" value="" data-row-count-id="6">
+		<tr class="billing-rows" data-row-count="7">
+			<td class="text-center billcol-slno" data-row-count-slno="7">7</td>
+			<td class="text-center billcol-code" data-row-count-code="7">AB987987</td>
+			<td class="text-center billcol-name">
+				<input id="productInputField" class="form-control product-input-field" list="productsDdList" type="text" data-search-by="name" data-row-count-prdname="7" value="Product new">
+				<datalist id="productsDdList">
+				  <option value="New Test produc 2*3[1234546789]--1"></option><option value="new1[1002]--2"></option><option value="new2[4534534]--3"></option><option value="new3[111225]--4"></option><option value="10 stock[1001]--5"></option><option value="qwerty[1000]--6"></option><option value="qwerty[1]--7"></option><option value="Product new[AB987987]--8"></option><option value="Product new[AB987987]--9"></option><option value="Product Test[AC98798789]--10">
+				</option></datalist>
+			</td>
+			<td class="text-center billcol-tax" data-row-count-prdtax="7">12</td>
+			<td class="text-center billcol-qty">
+				<input class="form-control form-pad-6 qty-input-field" data-row-count-prdqty="7" data-row-prd-rem="999999" type="number" min="1" value="4">
+			</td>
+			<td class="text-center billcol-price">
+				<input type="text" class="form-control form-pad-6 price-input-field" data-row-count-prdprice="7" min="0" value="250.00">
+			</td>
+			<td class="text-center billcol-netamt" data-this-tax-val="12" data-row-count-netamt="7">1,000.00</td>
+			<td class="text-center billcol-taxamt" data-row-count-taxamt="7">120.00</td>
+			<td class="text-center billcol-total" data-row-count-prdttl="7">1,120.00</td>
+		</tr><input type="hidden" class="hidden-id-input" value="" data-row-count-id="7">
+		<tr class="billing-rows" data-row-count="8">
+			<td class="text-center billcol-slno" data-row-count-slno="8">8</td>
+			<td class="text-center billcol-code" data-row-count-code="8">AC98798789</td>
+			<td class="text-center billcol-name">
+				<input id="productInputField" class="form-control product-input-field" list="productsDdList" type="text" data-search-by="name" data-row-count-prdname="8" value="Product Test">
+				<datalist id="productsDdList">
+				  <option value="New Test produc 2*3[1234546789]--1"></option><option value="new1[1002]--2"></option><option value="new2[4534534]--3"></option><option value="new3[111225]--4"></option><option value="10 stock[1001]--5"></option><option value="qwerty[1000]--6"></option><option value="qwerty[1]--7"></option><option value="Product new[AB987987]--8"></option><option value="Product new[AB987987]--9"></option><option value="Product Test[AC98798789]--10">
+				</option></datalist>
+			</td>
+			<td class="text-center billcol-tax" data-row-count-prdtax="8">20</td>
+			<td class="text-center billcol-qty">
+				<input class="form-control form-pad-6 qty-input-field" data-row-count-prdqty="8" data-row-prd-rem="999999" type="number" min="1" value="1">
+			</td>
+			<td class="text-center billcol-price">
+				<input type="text" class="form-control form-pad-6 price-input-field" data-row-count-prdprice="8" min="0" value="250.00">
+			</td>
+			<td class="text-center billcol-netamt" data-this-tax-val="20" data-row-count-netamt="8">250.00</td>
+			<td class="text-center billcol-taxamt" data-row-count-taxamt="8">50.00</td>
+			<td class="text-center billcol-total" data-row-count-prdttl="8">300.00</td>
+		</tr><input type="hidden" class="hidden-id-input" value="" data-row-count-id="8">
+		<tr class="billing-rows" data-row-count="9">
+			<td class="text-center billcol-slno" data-row-count-slno="9">9</td>
+			<td class="text-center billcol-code" data-row-count-code="9">AB987987</td>
+			<td class="text-center billcol-name">
+				<input id="productInputField" class="form-control product-input-field" list="productsDdList" type="text" data-search-by="name" data-row-count-prdname="9" value="Product new">
+				<datalist id="productsDdList">
+				  <option value="New Test produc 2*3[1234546789]--1"></option><option value="new1[1002]--2"></option><option value="new2[4534534]--3"></option><option value="new3[111225]--4"></option><option value="10 stock[1001]--5"></option><option value="qwerty[1000]--6"></option><option value="qwerty[1]--7"></option><option value="Product new[AB987987]--8"></option><option value="Product new[AB987987]--9"></option><option value="Product Test[AC98798789]--10">
+				</option></datalist>
+			</td>
+			<td class="text-center billcol-tax" data-row-count-prdtax="9">12</td>
+			<td class="text-center billcol-qty">
+				<input class="form-control form-pad-6 qty-input-field" data-row-count-prdqty="9" data-row-prd-rem="999999" type="number" min="1" value="1">
+			</td>
+			<td class="text-center billcol-price">
+				<input type="text" class="form-control form-pad-6 price-input-field" data-row-count-prdprice="9" min="0" value="250.00">
+			</td>
+			<td class="text-center billcol-netamt" data-this-tax-val="12" data-row-count-netamt="9">250.00</td>
+			<td class="text-center billcol-taxamt" data-row-count-taxamt="9">30.00</td>
+			<td class="text-center billcol-total" data-row-count-prdttl="9">280.00</td>
+		</tr><input type="hidden" class="hidden-id-input" value="" data-row-count-id="9">						</tbody>
+						<tfoot>
+							<tr class="billing-table-foot">
+								<th colspan="6" class="pad-h10 pad-v10">
+									Total
+								</th>
+								<th id="netTotal" class="text-center pad-r10">3440.75</th>
+								<th id="gstTotal" class="text-center pad-r10">447.39</th>
+								<th id="grandTotal" class="text-center pad-r10">3888.14</th>
+							</tr>
+							<tr class="billing-table-foot-1">
+								<th colspan="2" class="pad-h10 pad-v10 font-s11">
+									In Words: 
+								</th>
+								<th colspan="3" id="wordTotal" class="text-left pad-h10 capitalize font-s11">three thousand eight hundred and eighty eight only </th>
+								<th colspan="2" class="text-center pad-h10 font-s11">
+									Grand Total
+								</th>
+								<th colspan="2" id="finalTotal" class="text-right pad-h10 font-s11"><i class="fa fa-inr"></i> 3888.00</th>
+							</tr>
+						</tfoot>
+					</table>					
+					<table class="bill-page-table" id="billFootertax" border="1" style="border: 1px solid #ddd; margin: 4px 30px;">
+						<tbody><tr>
+							<th class="text-center pad-h10">GST[%]</th>
+							<th class="text-center pad-h10">Taxable Amt.</th>
+							<th class="text-center pad-h10">CGST Amt</th>
+							<th class="text-center pad-h10">SGST Amt</th>
+							<th class="text-center pad-h10">Total Tax</th>
+						</tr>
+
+				<tr class="tax-table-row" data-tax-row="0">
+					<th class="text-center">0%</th>
+					<th class="text-center" data-tax-row-taxable="0">54.50</th>
+					<th class="text-center" data-tax-row-cgst="0">0.00</th>
+					<th class="text-center" data-tax-row-sgst="0">0.00</th>
+					<th class="text-center" data-tax-row-total="0">0.00</th>
+				</tr>
+			
+				<tr class="tax-table-row" data-tax-row="5">
+					<th class="text-center">5%</th>
+					<th class="text-center" data-tax-row-taxable="5">0.00</th>
+					<th class="text-center" data-tax-row-cgst="5">0.00</th>
+					<th class="text-center" data-tax-row-sgst="5">0.00</th>
+					<th class="text-center" data-tax-row-total="5">0.00</th>
+				</tr>
+			
+				<tr class="tax-table-row" data-tax-row="12">
+					<th class="text-center">12%</th>
+					<th class="text-center" data-tax-row-taxable="12">2873.25</th>
+					<th class="text-center" data-tax-row-cgst="12">172.40</th>
+					<th class="text-center" data-tax-row-sgst="12">172.40</th>
+					<th class="text-center" data-tax-row-total="12">344.79</th>
+				</tr>
+			
+				<tr class="tax-table-row" data-tax-row="16">
+					<th class="text-center">16%</th>
+					<th class="text-center" data-tax-row-taxable="16">0.00</th>
+					<th class="text-center" data-tax-row-cgst="16">0.00</th>
+					<th class="text-center" data-tax-row-sgst="16">0.00</th>
+					<th class="text-center" data-tax-row-total="16">0.00</th>
+				</tr>
+			
+				<tr class="tax-table-row" data-tax-row="20">
+					<th class="text-center">20%</th>
+					<th class="text-center" data-tax-row-taxable="20">513.00</th>
+					<th class="text-center" data-tax-row-cgst="20">51.30</th>
+					<th class="text-center" data-tax-row-sgst="20">51.30</th>
+					<th class="text-center" data-tax-row-total="20">102.60</th>
+				</tr>
+			
+			<tr><th class="text-center">Total</th>
+			<th class="text-center taxable-amt-total">3440.75</th>
+			<th class="text-center taxable-sgst-total">223.69</th>
+			<th class="text-center taxable-sgst-total">223.69</th>
+			<th class="text-center taxable-tax-total">447.39</th>
+							</tr></tbody></table><!-- billFootertax -->
+					<table class="bill-page-table" id="billFooterBank" width="100%" border="1" style="border: none;">
+						<tbody><tr>
+							<th class="text-left pad-h10" width="20%">Bank Details</th>
+							<td class="text-left pad-h10">--</td>
+						</tr>
+						<tr>
+							<th class="text-left pad-h10">Bank Account Number</th>
+							<td class="text-left pad-h10">--</td>
+						</tr>
+						<tr>
+							<th class="text-left pad-h10">Bank Branch IFSC</th>
+							<td class="text-left pad-h10">--</td>
+						</tr>
+					</tbody></table><!-- billFooterBank -->
+					<table class="bill-page-table" id="billFooterDeclaration" width="100%" border="1">
+						<tbody><tr>
+							<th class="text-center">
+								<h5 class="text-left pad-h10 mar-4">Declaration:</h5>
+								<p class="text-left mar-b4" style="text-indent: 60px;">We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct. </p>
+							</th>
+						</tr>
+					</tbody></table><!-- billFooterDeclaration -->
+					<table class="bill-page-table" id="billFooterTerms" width="100%" border="1">
+						<tbody><tr>
+							<th class="text-center">
+								<h5 class="text-left pad-h10">Terms &amp; Conditions:</h5>
+								<h5 class="text-right pad-r60">For, sam enterprises</h5>
+								<br><br>
+								<h5 class="footer-signature"><span class="pull-left">E &amp; O.E</span><span>Reciever Signature</span><span class="pull-right">Authorised Signatory</span></h5>
+							</th>
+						</tr>
+					</tbody></table><!-- billFooterTerms -->
+				</div>
+			</div>
+		</div>
+
+
+	

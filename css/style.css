@@ -1,0 +1,365 @@
+/*
+	Application Name : 99 Billing (Light)
+	Application URI: https://www.amarnathradhakrishnan.com/web-applications/99-billing-light/
+	Version : 1.7.0
+	Developer: Amarnath Radhakrishnan
+	Developer URI: https:www.amarnathradhakrishnan.com
+*/
+
+@font-face {
+    font-family: 'Eras_Demi_ITC'; /*a name to be used later*/
+    src: url('fonts/Eras_Demi_ITC.ttf'); /*URL to font*/
+}
+
+
+header{
+	padding: 20px;
+}
+.hdr-bg{
+	background-color: white;
+	box-shadow: 0 0 10px 2px rgba(0,0,0,.3);
+}
+.body-bg{
+	background-color: rgb(243, 243, 243);
+}
+
+.bill-cont{
+	padding: 50px;
+	min-height: 600px;
+}
+.bg-white{
+	background-color: white;
+}
+
+header .logo-img{
+	max-height: 60px;
+}
+.btn-warning{
+	background-color: #ef8507;
+}
+.section-title{
+	padding: 20px 0;
+	font-size: 28px;
+}
+.pad-h10{
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+.pad-h20{
+	padding-left: 20px;
+	padding-right: 20px; 
+}
+.pad-v10{
+	padding-top: 10px;
+	padding-bottom: 10px; 
+}
+.pad-v20{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.mar-v50{
+	margin-top: 50px;
+	margin-bottom: 50px; 
+}
+.mar-b50{
+	margin-bottom: 50px; 
+}
+.pad-20{
+	padding: 20px;
+}
+.pad-r60{
+	padding-right: 60px;
+}
+.mar-4{
+	margin: 4px;
+}
+.mar-b4{
+	margin-bottom: 4px;
+}
+.font-s11{
+	font-size: 12px !important;
+	font-weight: bold;
+}
+.light-border{
+	border: 1px solid #c7c7c7;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+footer{
+	padding: 20px;
+	background-color: white;
+	text-align: center;
+	/*box-shadow: 0 0 10px 2px rgba(0,0,0,.3);*/
+}
+.footer-logo{
+	max-height: 30px;
+}
+.form-pad-6{
+	padding: 6px;
+}
+.text-white{
+	color: white !important;
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
+}
+
+.text-white:hover{
+	color: orange !important;
+}
+
+/*
+=========================================
+		Override Bootstrap Styles
+=========================================
+*/
+
+.navbar-default{
+	background-color: transparent;
+	border: none;
+}
+.navbar-nav{
+	background-color: transparent;
+}
+
+
+
+
+/*
+==========================================
+		LOGIN PAGE
+==========================================
+*/
+.login-page{
+	min-height: 100vh;
+	padding: 80px;
+}
+.login-box{
+	background-color: white;
+	box-shadow: 0 0 15px 1px rgba(0,0,0,.3);
+	padding: 50px;
+}
+.login-top-box{
+	padding: 50px;
+	text-align: center;
+    border-right: 1px solid #ddd;
+}
+.login-form-box{
+	/*border-left: 1px solid rgba(200,200,200,.6);*/
+	text-align: center;
+	padding: 50px;
+}
+
+
+
+
+
+#productsTable,.commonTable{
+	border: 1px solid #7e7e7e;
+}
+
+.commonTable tbody tr:nth-child(odd){    
+	background-color: rgba(248, 248, 248,1);
+    border-top: 1px solid rgba(100,100,100,.3);
+    border-bottom: 1px solid rgba(100,100,100,.3);
+}
+.commonTable tbody tr:nth-child(even){    
+	background-color: #fff;
+}
+
+.commonTable thead tr, .commonTable tfoot tr{
+	background-color: #F0F0F0;
+}
+.commonTable th,.commonTable td{
+	padding: 10px;
+}
+
+
+
+/*
+=======================================================
+		BILLING
+=======================================================
+*/
+#sectionToPrint{
+	font-size: 12px;
+}
+.bill-company-logo{
+	/*max-width: 200px;*/
+	max-height: 70px;
+}
+.bill-table-container{
+	background-color: white;
+    font-family: 'Eras_Demi_ITC';
+	/*margin: 50px auto;*/
+}
+#billgeneratingTable td{
+	padding: 0 10px;
+}
+.billing-table-container{
+	border: 1px solid #333;
+    margin-bottom: 70px;
+}
+.billing-table-foot th,.billing-table-foot-1 th,#billgeneratingTable th,#billgeneratingTable td{
+	border-right: 1px solid #333;
+}
+.billing-table-foot th,#billFooterTerms{
+	border-top: 1px solid #333;
+}
+.billing-table-foot th:last-child,.billing-table-foot-1 th:last-child,#billgeneratingTable th:last-child,#billgeneratingTable td:last-child{
+	border-right: none;
+}
+.billing-table-container table{
+	border-right: none;
+	border-left: none;
+}
+table#billHeader th{
+	padding: 10px; 
+}
+#billHeader h1{
+	font-size: 48px;
+	margin-top: 10px;
+}
+table#billHeaderInfo th{
+	padding-left: 10px; 
+}
+table#billHeaderSubInfo th{
+	padding: 2px; 
+}
+table#billHeaderInfo p{
+    margin-top: 10px;
+}
+
+span[contentEditable]{
+	padding: 3px 10px;
+	border: 1px solid #ddd;
+	min-width: 250px;
+	display: inline-block;
+	min-height: 14px;
+}
+.state-code-field{
+	min-width: 40px !important;
+}
+#printButtons{
+	margin-top: -110px;
+}
+.price-input-field,.qty-input-field{
+	text-align: right;	
+	padding: 0 1px 0 0;
+}
+.billcol-netamt,.billcol-taxamt,.billcol-total,#netTotal,#gstTotal,#grandTotal{
+	text-align: right;
+}
+.pad-r10{
+	padding-right: 10px;
+}
+.type-change-field{
+	font-size: 20px;
+    transform: scale(1.5,1.5);
+    display: inline-block;
+}
+.cust-gst-box{
+	display: none;
+}
+.billing-rows{
+	border-bottom: none;
+}
+
+#sectionToPrint p{
+	margin: 0;
+}
+#billFooterDeclaration{
+	border-bottom: none;
+}
+.footer-signature{
+    margin: 0;
+    padding: 2px;
+}
+
+
+
+@media print {
+	body * {
+		visibility: hidden;
+	}
+	#billHeader p{
+		font-size: 13px;
+	}
+	.bill-page-table{
+		font-size: 12px !important;
+		font-weight: 100 !important;
+	}
+	.container{
+		width: 100%;
+	}
+
+	span[contentEditable]{
+		padding-top: 1px !important;
+		padding-bottom: 1px !important;
+	}
+	#sectionToPrint, #sectionToPrint * {
+		visibility: visible;
+		font-size: 10px;
+	}
+	#sectionToPrint {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.form-control{
+		border: none;
+		box-shadow: none;
+		padding: 2px;
+		height: 16px;
+	}
+	.form-pad-6 {
+	    padding: 0;
+	}
+	input[type=number]::-webkit-inner-spin-button, 
+	input[type=number]::-webkit-outer-spin-button { 
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    margin: 0; 
+	}
+	th{
+		font-weight: 100 !important;
+	}
+	span[contentEditable]{
+		border: none;
+	}
+	table#billHeaderInfo p{
+	    margin: 0px !important;
+	    font-size: 10px;
+	}
+	h1{
+		font-size: 26px !important;
+    		font-weight: bold;
+	}
+	.comp-name{
+		font-size: 40px !important;
+	}
+	button{
+		visibility: hidden;
+	}
+	select{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		text-indent: 1px;
+		text-overflow: '';
+	}
+	.billing-table-container{
+		margin-bottom: 0 !important;
+	}
+	.mar-b50{
+		margin-bottom: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	.for-company-label{
+		font-size: 14px !important;
+	}
+/*	tfoot th.pad-h10{
+		padding-top: 5px;
+		padding-bottom: 5px; 
+	}*/
+}
